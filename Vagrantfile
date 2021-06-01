@@ -6,7 +6,21 @@ Vagrant.configure("2") do |config|
     rm -fv /etc/ssh/ssh_host_*
     dpkg-reconfigure openssh-server
 
-    apt-get update
-    sudo apt-get install make build-essential gdb git cscope -y
+    sudo apt-get -y update
+    sudo apt-get -y install \
+        build-essential \
+        clang-8 \
+        clang-format-8 \
+        clang-tidy-8 \
+        cmake \
+        cscope \
+        doxygen \
+        gdb \
+        git \
+        g++-7 \
+        make \
+        pkg-config \
+        valgrind \
+        zlib1g-dev
   SHELL
 end

@@ -12,20 +12,22 @@ Everything in this directory will be synced to the vm in the `/vagrant` folder. 
 
 ## Installing Packages
 
+This should be run on `vagrant up` automatically, but in case it isn't:
+
 ```bash
-# Update apt-get.
 sudo apt-get -y update
-# Install packages.
 sudo apt-get -y install \
     build-essential \
     clang-8 \
     clang-format-8 \
     clang-tidy-8 \
     cmake \
+    cscope \
     doxygen \
     gdb \
     git \
     g++-7 \
+    make \
     pkg-config \
     valgrind \
     zlib1g-dev
